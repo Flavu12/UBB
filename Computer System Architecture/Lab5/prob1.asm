@@ -12,17 +12,17 @@ segment data use32 class=data
 
 segment code use32 class=code
     start:
-        mov ecx, len-1
+        mov ecx, len-1 ;mutam in ecx lungimea sirului s- 1
         jecxz final
-        mov esi, 0
-        mov edi, 0
+        mov esi, 0    ;index pt sirul s
+        mov edi, 0    ;index pentru sirul d
     repeta:
-        mov al, [s+esi]
-        inc esi 
-        mov bl, [s+esi]
-        mul bl
-        mov [d+edi], al
-        inc edi
+        mov al, [s+esi] ;al<-s[i]
+        inc esi         ;i++
+        mov bl, [s+esi] ;bl<-s[i+1]
+        mul bl          ;ax<-al*bl
+        mov [d+edi], al ;d[j]<-al
+        inc edi         ;j++
     loop repeta
    final:
 
