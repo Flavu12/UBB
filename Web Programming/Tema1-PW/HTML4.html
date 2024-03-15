@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Formular Adoptie</title>
+</head>
+<body bgcolor="#CCC">
+  <h1>Formular de Adopție Cățel</h1>
+  <p> Completați următorul formular cu datele dumneavoastră pentru a putea finaliza cererea de adopție</p>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Informații personale</legend>
+      <div>
+        <table border="1" cellspacing="0" cellpadding="2">
+          <tr>
+            <th colspan="2">Informații despre Adoptator</th>
+          </tr>
+          <tr>
+            <td><label for="nume">Nume:</label></td>
+            <td><input type="text" id="nume" name="nume" maxlength="50" title="Introduceți numele"></td>
+          </tr>
+          <tr>
+            <td><label for="prenume">Prenume:</label></td>
+            <td><input type="text" id="prenume" name="prenume" maxlength="50"></td>
+          </tr>
+            <tr>
+            <td><label>CNP:</label></td>
+            <td><input type="text" id="cnp" name="cnp"></td>
+        </tr>
+        <tr>
+            <td><label>Serie CI:</label></td>
+            <td><input type="text" id="serie" name="serie"></td>
+        </tr> 
+        <tr>
+            <td><label>Număr CI:</label></td>
+            <td><input type="text" id="nr" name="nr"></td>
+        </tr>
+        <tr>
+            <td><label>Varstă:</label></td>
+            <td><input type="text" id="varsta" name="varsta"></td>
+            </tr>
+        <tr>
+            <td><input type="text" value="Minim 18 ani! " readonly></td>
+            <td></td>
+        </tr>
+            <tr>
+            <td><label>Județ:</label></td>
+            <td><input type="text" id="judet" name="judet"></td>
+        </tr>
+            <tr>
+            <td><label>Oras:</label></td>
+            <td><input type="text" id="oras" name="oras"></td>
+        </tr>
+            <tr>
+            <td><label>Adresă:</label></td>
+            <td><textarea id="adresa" name="adresa" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td><label>Telefon:</label></td>
+            <td><input type="text" id="telefon" name="telefon" title="Introduceți numarul de telefon" size="10"></td>
+        </tr>
+        <tr>
+            <td><label>Email:</label></td>
+            <td><input type="text" id="email" name="email" title="Introduceți adresa dvs. de email"></td>
+        </tr>
+        
+            <tr>
+                <td><label>Ocupație:</label></td>
+                <td><select name="ocupatie">
+                <option value="student">Student</option>
+                <option value="angajat" selected>Angajat</option>
+                <option value="altele">Prefer să nu spun</option>
+                    </select></td>
+            </tr>   
+            </table>
+            <br>
+          </div>
+<div>
+          <table style="border: 1px solid black;">
+                <tr>
+            <th colspan="2">Informații despre Căței</th>
+                </tr>
+          
+          <tr>
+              <td>Categoriile de căței pe care le avem sunt:</td>
+              <td>
+              <ol start="1">
+                  <li><strong>De dimenisuni mici:</strong>
+                      <ol type="a">
+                      <li>Bichon</li>
+                      <li>Pomeranian</li>
+                      <li>Papillon</li>
+                      </ol>
+                  </li>
+                  <li><strong>De dimenisuni medii:</strong>
+                       <ol type="a">
+                    <li>Beagle</li>
+                    <li>Bulldog</li>
+                    <li>Cocker Spaniel</li>       
+                      </ol>
+                  </li>
+                  <li><strong>De dimensiuni mari:</strong>
+                       <ol type="a">
+                    <li>Cane Corso</li>
+                    <li>Doberman</li>
+                    <li>Boxer</li>       
+                      </ol>
+                  </li>
+              </ol>
+              </td>
+          </tr>
+          <tr>
+              <td>Ce dimensiune pentru cățel iți doresti?</td>
+              <td>
+        <label><input type="radio" name="answer" class="inline" value="mica" checked > Dimensiune mica</label>
+        <label><input type="radio" name="answer" class="inline" value="medie" >Dimensiune medie</label>
+        <label><input type="radio" name="answer" class="inline" value="mare" > Dimensiune mare</label>
+        <label><input type="radio" name="answer" class="inline" value="idk" > Nu sunt hotărat/ă</label>
+                </td>  
+          </tr>
+        <tr>
+            <td>Ați mai avut vreun cățel înainte?</td> 
+            <td>
+        <label><input type="checkbox" name="answer" class="inline" value="da"> Da</label>
+        <label><input type="checkbox" name="answer" class="inline" value="nu"> Nu</label>
+            </td>
+        </tr>      
+          <tr>
+          <td>Ce caracteristici doriți să aibă cățelul?</td>
+        <td><textarea name="bio" rows="3" cols="30"></textarea></td>
+        </tr>
+          <tr>
+            <td>Norme de ingrijire</td>  
+            <td><table style="border: 1px solid black;">
+                <tr><td>Stăpânul trebuie să îndeplinească următoarele condiții: </td></tr>
+                <tr>
+                <td><ul>
+                <li>Animăluțul trebuie dus de 2 ori pe an la veterinar.</li>
+                <li>Citiți cu atenție gramajul de mâncare specific dimensiunii cățelului.</li>
+                <li>Nu lăsați cățelul nesupravegheat.</li>
+                </ul></td>
+                </tr>    
+                </table></td>  
+              </tr>
+          </table>    
+        <br>
+          <br>
+    </div>
+        <input type="submit" value="Trimite">
+    </fieldset>
+  </form>
+  <a href="HTML5.html" target="_blank">Pentru mai multe detalii apăsați aici</a>
+</body>
+</html>
