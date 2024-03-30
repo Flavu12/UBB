@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+header{
+    background-color:red;
+    height: 20vh;
+}
+
+#menu{
+    background-color: yellow;
+    
+}
+
+main{
+    background-color: green;
+    height: 50vh;
+}
+
+footer{
+    background-color: lightpink;
+    height: 15vh;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+li {
+    width: 18%;
+    border-left: 2px solid;
+    float: left;
+}
+
+#menu {
+    justify-content: space-between;
+}

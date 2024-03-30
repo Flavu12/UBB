@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+header{
+    background-color:red;
+    height: 20vh;
+}
+
+#menu{
+    background-color: yellow;
+    
+}
+
+main{
+    background-color: green;
+    height: 60vh;
+}
+
+footer{
+    background-color: lightpink;
+    height: 20vh;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+li {
+   
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+   
+}
+
+#menu {
+   width: 30%;
+}
+
+main{
+    width: 70%;
+}
+#principal{
+    display: flex;
+}
