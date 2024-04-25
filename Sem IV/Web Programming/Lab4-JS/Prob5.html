@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel</title>
+<style>
+.carousel ol li:not(:first-child) {
+  display: none;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: 400px;
+   width: 400px;
+}
+</style>
+</head>
+<body>
+
+<div class="carousel">
+  <ol>
+    <li>
+      <a href="#">
+        <img src="image1.jpg" alt="Imagine 1">
+        Text link 1
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="image2.jpg" alt="Imagine 2">
+        Text link 2
+      </a>
+    </li>
+    <li>
+        <a href="#">
+        <img src="image3.jpg" alt="Imagine 3">
+        Text link 3
+       </a>
+    </li>
+    <li>
+        <a href="#">
+        <img src="image4.jpg" alt="Imagine 4">
+        Text link 4
+       </a>
+    </li>
+  </ol>
+  <button id="prevBtn">Previous</button>
+  <button id="nextBtn">Next</button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const carouselItems = document.querySelectorAll('.carousel ol li');
+  let currentIndex = 0;
+  let interval;
+
+  function showItem(index) {
+    carouselItems.forEach((item, i) => {
+      if (i === index) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  function startAutoPlay() {
+    interval = setInterval(function() {
+      currentIndex = (currentIndex + 1) % carouselItems.length;
+      showItem(currentIndex);
+    }, 3000); 
+  }
+
+  function resetAutoPlay() {
+    clearInterval(interval);
+    startAutoPlay();
+  }
+
+  document.getElementById('nextBtn').addEventListener('click', function() {
+    currentIndex = (currentIndex + 1) % carouselItems.length;
+    showItem(currentIndex);
+    resetAutoPlay();
+  });
+
+  document.getElementById('prevBtn').addEventListener('click', function() {
+    currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+    showItem(currentIndex);
+    resetAutoPlay();
+  });
+
+  startAutoPlay();
+});
+</script>
+
+</body>
+</html>

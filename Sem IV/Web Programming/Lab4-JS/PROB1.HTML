@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problema 1</title>
+    <meta charset="utf-8" />
+    <script>
+        //item = optiunea selectata, select = numarul listei selectate, index = indexul optiunii selectate
+        function mutare(item, select, index) { 
+            let target, source;
+            if (select == 1) {
+                target = document.getElementById("lista2");
+                source = document.getElementById("lista1");
+            } else if (select == 2) {
+                source = document.getElementById("lista2");
+                target = document.getElementById("lista1");
+            }
+
+            let option = document.createElement("option");
+            option.text = item;
+            target.add(option);
+            source.remove(index);
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Lista 1</h2>
+    <ul>
+        <select id="lista1" multiple="multiple" ondblclick="mutare(this.options[this.selectedIndex].text,1,this.selectedIndex);">
+			<option value="" disabled selected style="display:none;"></option>
+			<option value ="Optiune1">Optiunea 1</option>
+			<option value ="Optiune2">Optiunea 2</option>
+			<option value ="Optiune3">Optiunea 3</option>
+			<option value ="Optiune4">Optiunea 4</option>
+		</select>
+    </ul>
+    <h2>Lista 2</h2>
+    <ul>
+        <select id="lista2" multiple="multiple" ondblclick="mutare(this.options[this.selectedIndex].text,2,this.selectedIndex);">
+			<option value="" disabled selected style="display:none;"></option>
+			<option value ="Optiune5">Optiunea 5</option>
+			<option value ="Optiune6">Optiunea 6</option>
+			<option value ="Optiune7">Optiunea 7</option>
+			<option value ="Optiune8">Optiunea 8</option>
+		</select>
+    </ul>
+</body>
+
+</html>
