@@ -1,0 +1,7 @@
+C:\Users\Flavia Paula\source\repos\Lab4-SGBD\Lab4-SGBD\bin\Debug\Lab4-SGBD.exe.config
+C:\Users\Flavia Paula\source\repos\Lab4-SGBD\Lab4-SGBD\bin\Debug\Lab4-SGBD.exe
+C:\Users\Flavia Paula\source\repos\Lab4-SGBD\Lab4-SGBD\bin\Debug\Lab4-SGBD.pdb
+C:\Users\Flavia Paula\source\repos\Lab4-SGBD\Lab4-SGBD\obj\Debug\Lab4-SGBD.csproj.AssemblyReference.cache
+C:\Users\Flavia Paula\source\repos\Lab4-SGBD\Lab4-SGBD\obj\Debug\Lab4-SGBD.csproj.CoreCompileInputs.cache
+C:\Users\Flavia Paula\source\repos\Lab4-SGBD\Lab4-SGBD\obj\Debug\Lab4-SGBD.exe
+C:\Users\Flavia Paula\source\repos\Lab4-SGBD\Lab4-SGBD\obj\Debug\Lab4-SGBD.pdb
