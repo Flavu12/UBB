@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'ro.mpp2024'
+version = '1.0-SNAPSHOT'
+
+repositories{
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(path: ':TriatlonModule')
+    implementation project(path: ':TriatlonPersistance')
+    implementation project(path: ':TriatlonServices')
+    implementation project(path: ':TriatlonNetworking')
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application{
+    mainClass='ro.mpp2024.StartRcpServer'
+}
