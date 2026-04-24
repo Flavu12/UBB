@@ -1,0 +1,51 @@
+142.20.197.128 ADRESA DE RETEA
+255.255.255.128
+
+N1:22
+142.20.197.128 +32
+142.20.197.159-ultima adresa disponibila in reteaua asta
+
+N2:14
+142.20.197.160 +16
+142.20.197.175
+
+N3: 10
+142.20.197.176 +16
+142.20.197.191-ultima adresa disponibila in reteaua asta
+
+N4:8
+142.20.197.192 + 16
+142.20.197.207
+
+N5: 2
+142.20.197.208 + 4
+142.20.197.211
+
+---------------------------------
+121.60.20.0 - Adresa de retea
+Mask: 255.255.255.0(/24)
+
+N1: 40 IP's
+121.60.20.0 + 64 (2^6)
+121.60.20.63 -ultima adresa disponibila
+
+N2: 32 IP's
+121.60.20.64 + 64 (2^6)
+121.60.20.127- ultima adresa disponibila
+
+N3: 16 IP's
+121.60.20.128 + 32 (2^5)
+121.60.20.159 -ultima adresa disponibila
+
+N4: 16 IP's
+121.60.20.160 + 32 (2^5)
+121.60.20.191 - utlima adresa disponibila
+
+N5: 4 IP's
+121.60.20.192 + 8 (2^3)
+121.60.20.199 -ultima adresa disponibila
+
+N12345: 121.60.20.200 
+N5W:
+  
+

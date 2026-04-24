@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std ;
+int main ( ) {
+	float raza , p_cerc , a_cerc , $ ;
+	raza = 5 ;
+	p_cerc = raza * 3.14 * 2 ;
+	a_cerc = raza * raza * 3.14 ;
+	cout<< p_cerc ;
+	cout<< a_cerc ;
+}

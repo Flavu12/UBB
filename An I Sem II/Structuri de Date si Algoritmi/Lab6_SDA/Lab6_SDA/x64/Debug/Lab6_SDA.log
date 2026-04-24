@@ -1,0 +1,10 @@
+﻿  IteratorMD.cpp
+  MD.cpp
+  TestExtins.cpp
+C:\Users\Flavia Paula\source\repos\Lab6_SDA\Lab6_SDA\TestExtins.cpp(230,3): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\Flavia Paula\source\repos\Lab6_SDA\Lab6_SDA\TestExtins.cpp(239,3): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\Flavia Paula\source\repos\Lab6_SDA\Lab6_SDA\TestExtins.cpp(240,3): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+  TestScurt.cpp
+C:\Users\Flavia Paula\source\repos\Lab6_SDA\Lab6_SDA\TestScurt.cpp(70,41): warning C4101: 'e': unreferenced local variable
+  Generating Code...
+  Lab6_SDA.vcxproj -> C:\Users\Flavia Paula\source\repos\Lab6_SDA\x64\Debug\Lab6_SDA.exe
