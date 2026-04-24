@@ -1,0 +1,87 @@
+#include <iostream>
+#include <fstream>
+#include <queue>
+#include <vector>
+#define inf 1000000000
+using namespace std;
+ifstream f("graf.txt");
+int a[105][105], n, m, d[105], p[105];
+
+void Bellman(int nod) {
+    cout << "!!Algoritmul lui Bellman!!\n\n";
+    int i;
+    //initializare
+    for (i = 1; i <= n; i++)
+        d[i] = inf, p[i] = nod;
+    d[nod] = 0;
+    
+    //alg
+    for ( i = 0; i < n-1; i++)
+        for (int j = 0; j < n; j++)
+            if (a[i][j])
+                //relax
+                if (d[j] > d[i] + a[i][j])
+                    d[j] = d[i] + a[i][j], p[j] = i;
+          
+                
+        
+    for (int j = 0; j < n; j++)
+        if (d[j] > d[i] + a[i][j])
+            break;
+    
+    for ( i = 0; i < n; i++)
+        if (i != nod && d[i]!=inf && nod!=i)
+            cout << "Drumul de la " << nod << " la " << i << " este de cost " << d[i] << '\n';
+        else if(nod!=i)
+            cout << "Drumul de la " << nod << " la " << i << " este de cost " << "inf" << '\n';
+        else
+            cout << "Drumul de la " << nod << " la " << i << " este de cost " << 0 << '\n';
+   cout << endl;
+    
+}
+
+void Dijkstra(int nod) {
+    cout << "!!Algoritmul lui Dijkstra!!\n\n";
+
+    priority_queue <int> Q;
+    vector <int> s;
+    for (int i = 0; i < n; i++) {
+        Q.push(-i);
+        d[i] = inf;
+        p[i] = nod;
+    }
+    d[nod] = 0;
+    while (!Q.empty()) {
+        int u = -Q.top();
+        Q.pop();
+        s.push_back(u);
+        for (int j = 1; j <= n; j++)
+            if (a[u][j])
+                if (d[j] > d[u] + a[u][j])
+                    d[j] = d[u] + a[u][j], p[j] = u;
+    }
+    for (int i = 0; i < n; i++)
+        if (i != nod && d[i]!=inf)
+            cout << "Drumul de la " << nod << " la " << i << " este de cost " << d[i] << '\n';
+        else if (nod != i)
+            cout << "Drumul de la " << nod << " la " << i << " este de cost " << "inf" << '\n';
+        else
+            cout << "Drumul de la " << nod << " la " << i << " este de cost " << 0 << '\n';
+    cout << endl;
+    
+
+}
+
+int main()
+{
+    f >> n >> m;
+    int nod; f >> nod;
+    for (int j = 1; j <= m; j++) {
+        int x, y, c;
+        f >> x >> y >> c;
+        a[x][y] = c;
+    }
+    Bellman(nod);
+    Dijkstra(nod);
+    return 0;
+}
