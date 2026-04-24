@@ -1,0 +1,6 @@
+1, Scream, a aparut in 1996, horror
+2, Ice Age, a aparut in 2000, animatie
+3, Incantation, a aparut in 2022, horror
+4, Thor, a aparut in 2012, actiune
+5, Scary Movie, a aparut in 2010, comedie
+6, Dead Note, a aparut in 2001, anime
