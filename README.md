@@ -13,6 +13,7 @@ The projects are organized by academic year and semester.
 #### Semester I
 
 * 📂 [Algebra](./An%20I%20Sem%20I/Algebra/)
+* 📂 [Analiza Matematica](./An%20I%20Sem%20I/Analiza/)
 * 📂 [Arhitectura sistemelor de calcul ](./An%20I%20Sem%20I/Computer%20System%20Architecture/)
 * 📂 [Fundamentele Programarii](./An%20I%20Sem%20I/Fundamentele%20Programarii/)
 * 📂 [Logica computationala](./An%20I%20Sem%20I/Logica%20computationala/)
@@ -22,6 +23,7 @@ The projects are organized by academic year and semester.
 #### Semester II
 
 * 📂 [Data Structures and Algorithms](./An%20I%20Sem%20II/Structuri%20de%20Date%20si%20Algoritmi)
+* 📂 [Geometrie](./An%20I%20Sem%20II/Geometrie)
 
 ---
 
