@@ -33,6 +33,9 @@ The projects are organized by academic year and semester.
 
 * 📂 [Baze de Date](./An%20II%20Sem%20I/Baze%20de%20Date/)
 * 📂 [Retele de Calculatoare](./An%20II%20Sem%20I/Retele%20de%20Calculatoare/)
+* 📂 [Probabilitati si Statistica](./An%20II%20Sem%20I/Probabilitati%20si%20Statistica/)
+* 📂 [Programare Logica si Functionala](./An%20II%20Sem%20I/Programare%20Logica%20si%20Functionala/)
+
 
 ---
 
@@ -50,7 +53,7 @@ The projects are organized by academic year and semester.
 
 #### Semester I
 
-* 📂 [Aplicarea Geometriei in Informatica](./An%20III%20Sem%20I/AGI/)
+* 📂 [Aplicatii ale Geometriei in Informatica](./An%20III%20Sem%20I/AGI/)
 * 📂 [LFTC](./An%20III%20Sem%20I/LFTC/)
 
 ---
