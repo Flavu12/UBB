@@ -24,6 +24,7 @@ The projects are organized by academic year and semester.
 
 * 📂 [Data Structures and Algorithms](./An%20I%20Sem%20II/Structuri%20de%20Date%20si%20Algoritmi)
 * 📂 [Geometrie](./An%20I%20Sem%20II/Geometrie)
+* 📂 [Sisteme de Operare](./An%20I%20Sem%20II/Sisteme%20de%20Operare)
 
 ---
 

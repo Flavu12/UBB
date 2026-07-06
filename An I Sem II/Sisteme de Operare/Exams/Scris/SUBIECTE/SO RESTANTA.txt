@@ -1,0 +1,78 @@
+1.Daţi o expresie regulară care acceptă orice secvenţă de lungime pară de cuvinte (formate din litere) 
+separate prin spaţii, cu condiţia ca pentru fiecare cuvant să lungimea şi poziţia în secvenţă să
+fie ambele pare sau impare. Numărarea cuvintelor începe de la 1. Ex: al 5-lea cuvânt trebuie 
+să aibă lungime impară, iar al 16-lea să aibă lungime pară.
+2.Daţi trei comenzi GREP care afişează dintr-un fişier liniile formate exclusiv dintr-o
+secvenţă nevidă de litere şi cifre alternativ (ex: a0g sau 1r5m).
+3. Scrieţi două comenzi SED care afişează liniile unui fişier ştergând prima secvenţă nevidă de litere mici.
+4. Scrieţi o comandă AWK care afişează suma tuturor numerelor dintr-un fişier text ale cărui linii sunt formate din secvenţe de cifre separate prin spaţii.
+5. Daţi trei moduri de a afla dimensiunea unui fişier în linia de comandă Linux.
+6.Scrieţi o condiţie Shell UNIX care verifică dacă un un fişier există şi utilizatorul curent are vreo permisiune asupra lui.
+7.Desenati ierarhia proceselor create de coduld e mai jos, incluzand procesul parinte.
+ for(i=0; i<3; i++) {
+        if(fork() > 0) {
+            wait(0);
+            wait(0);
+            exit(0);
+        }
+    }
+8. Ce va tipări fragmentul de cod de mai jos? Justificaţi răspunsul.
+  execl("expr", "expr", "1", "+", "1", NULL);
+    execlp("echo", "echo", "3", NULL);
+    printf("4\n");
+9.De ce descriptorul de fişier returnat de popen trebuie închis cu pclose şi nu cu fclose?
+10. Câte FIFO-uri poate deschide pentru citire un process, dacă FIFO-urile sunt şi vor fi întotdeauna folosite de alte procese doar pentru scriere?
+11. Când aţi folosi execv în locul de execl?
+12. Ce este o "secţiune critică"?
+13.Daţi trei apeluri de funcţii care asigură excludere mutuală.
+14. Care va fi efectul înlocuirii apelurilor la pthread_mutex_lock cu apeluri la sem_post?
+15. Ce se poate întâmpla dacă funcţia f este rulată de mai multe thread-uri simultane? De ce?
+pthread_mutex_t m[2];
+void* f(void* p) {
+    int id = (int)p;
+    pthread_mutex_t* first = &m[id % 2];
+    pthread_mutex_t* second = &m[(id+1) % 2];
+
+    pthread_mutex_lock(first);
+    pthread_mutex_lock(second);
+    ...
+    pthread_mutex_unlock(second);
+    pthread_mutex_unlock(first);
+}
+16. Daţi un exemplu de valori distincte şi mai mari ca 0 pentru T, N1, N2 şi N3 pentru care programul de mai jos se incheie.
+pthread_barrier_t b1, b2;
+
+void* f1(void* a) {
+    pthread_barrier_wait(&b1);
+    return NULL;
+}
+
+void* f2(void* a) {
+    pthread_barrier_wait(&b2);
+    return NULL;
+}
+
+int main() {
+    int i;
+    pthread_t t[T][2];
+
+    pthread_barrier_init(&b1, NULL, N1);
+    pthread_barrier_init(&b2, NULL, N2);
+    for(i=0; i<T; i++) {
+        pthread_create(&t[i][0], NULL, f1, NULL);
+        pthread_create(&t[i][1], NULL, f2, NULL);
+    }
+    for(i=0; i<T; i++) {
+        pthread_join(t[i][0], NULL);
+        pthread_join(t[i][1], NULL);
+    }
+    pthread_barrier_destroy(&b1);
+    pthread_barrier_destroy(&b2);
+    return NULL;
+}
+
+17.Ce puteţi face ca programator pentru a preveni deadlock-urile?
+18.Prin ce tranziţie de stare va trece un process când apelează sem_wait şi în ce condiţii? Justificaţi răspunsul.
+19. Considerand ca dimensiunea unui bloc este B si dimensiunea unei adrese este A, cate blocuri de date sunt adresate de indirectarea dubla a unui i-nod?
+20.Cand ati incarca in memorie paginile unui program care tocmai este pornit?
+
